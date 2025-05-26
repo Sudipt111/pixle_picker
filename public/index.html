@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shared Pixel Canvas</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    canvas { border: 2px solid black; image-rendering: pixelated; }
+  </style>
+</head>
+<body>
+  <h2>Real-time Pixel Canvas</h2>
+  <canvas id="canvas" width="500" height="500"></canvas>
+  <input type="color" id="colorPicker" value="#ff0000">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
